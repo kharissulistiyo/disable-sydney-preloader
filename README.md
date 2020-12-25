@@ -1,5 +1,5 @@
 # Disable Sydney Preloader
-This plugin disables preloader animation on Sydney WordPress theme. No extra settings. Just install and enable this plugin.
+This plugin disables preloader animation on [Sydney WordPress theme](https://wordpress.org/themes/sydney/). No extra settings. Just install and enable this plugin.
 
 ## Installation
 
