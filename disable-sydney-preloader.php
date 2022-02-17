@@ -12,7 +12,7 @@
  * Plugin Name: Disable Sydney Preloader
  * Plugin URI:  https://easyfixwp.com/
  * Description: This plugin disables preloader animation on Sydney WordPress theme. No extra settings. Just install and enable this plugin.
- * Version:     0.0.6
+ * Version:     0.0.7
  * Author:      kharisblank
  * Author URI:  https://easyfixwp.com
  * Text Domain: sy-disable-preloader
@@ -60,6 +60,8 @@ if ( !class_exists('SY_Disable_Preloader') ) :
     function disable_preloader() {
       if( $this->is_sydney_active() ) {
         remove_action('sydney_before_site', 'sydney_preloader');
+        remove_action('wp_body_open', 'sydney_preloader');
+        remove_action('elementor/theme/before_do_header', 'sydney_preloader');        
       }
     }
 
